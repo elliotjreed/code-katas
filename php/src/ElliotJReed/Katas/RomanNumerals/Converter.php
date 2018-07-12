@@ -17,13 +17,29 @@ class Converter
             return $this->processLastDigit($arabicNumber);
         }
 
-        if ($arabicNumber >= 10) {
-            return 'X' . $this->processLastDigit((int) substr($arabicNumberAsString, -1));
+        if ($arabicNumber >= 10 && $arabicNumber <= 99) {
+            return $this->processSecondToLastDigit($arabicNumber) . $this->processLastDigit($arabicNumber);
         }
     }
 
-    private function processLastDigit(int $arabicNumber): string
+    private function processSecondToLastDigit(int $number): string
     {
+        $characterRepeater = (int) substr((string) $number, -2, 1);
+        if ($number <= 39) {
+            return str_repeat('X', $characterRepeater);
+        }
+
+        if ($number >= 50 ) {
+            return 'L' . str_repeat('X', $characterRepeater - 5);
+        }
+
+        return 'XL';
+    }
+
+    private function processLastDigit(int $number): string
+    {
+        $arabicNumber = (int) substr((string) $number, -1);
+
         if ($arabicNumber < 4) {
             return str_repeat('I', $arabicNumber);
         }

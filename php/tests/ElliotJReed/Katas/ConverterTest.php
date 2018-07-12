@@ -120,4 +120,46 @@ class ConverterTest extends TestCase
 
         $this->assertEquals('XIX', $romanNumeral);
     }
+
+    public function testItReturnsRomanNumeralXXForArabicNumberTwenty(): void
+    {
+        $romanNumeral = $this->converter->convert(20);
+
+        $this->assertEquals('XX', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralXXIIIForArabicNumberTwentyThree(): void
+    {
+        $romanNumeral = $this->converter->convert(23);
+
+        $this->assertEquals('XXIII', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralXlForArabicNumberForty(): void
+    {
+        $romanNumeral = $this->converter->convert(40);
+
+        $this->assertEquals('XL', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralXlForArabicNumberFortyThree(): void
+    {
+        $romanNumeral = $this->converter->convert(43);
+
+        $this->assertEquals('XLIII', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralXlForArabicNumberFiftyNine(): void
+    {
+        $romanNumeral = $this->converter->convert(59);
+
+        $this->assertEquals('LIX', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralXlForArabicNumberEightySeven(): void
+    {
+        $romanNumeral = $this->converter->convert(87);
+
+        $this->assertEquals('LXXXVII', $romanNumeral);
+    }
 }
