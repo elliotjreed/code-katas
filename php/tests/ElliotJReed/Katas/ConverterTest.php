@@ -23,140 +23,147 @@ class ConverterTest extends TestCase
         $this->converter->convert(0);
     }
 
-    public function testItReturnsRomanNumeralIForArabicNumberOne(): void
+    public function testItReturnsRomanNumeralForArabicNumberOne(): void
     {
         $romanNumeral = $this->converter->convert(1);
 
         $this->assertEquals('I', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralIiForArabicNumberTwo(): void
+    public function testItReturnsRomanNumeralForArabicNumberTwo(): void
     {
         $romanNumeral = $this->converter->convert(2);
 
         $this->assertEquals('II', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralIiiForArabicNumberThree(): void
+    public function testItReturnsRomanNumeralForArabicNumberThree(): void
     {
         $romanNumeral = $this->converter->convert(3);
 
         $this->assertEquals('III', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralIvForArabicNumberFour(): void
+    public function testItReturnsRomanNumeralForArabicNumberFour(): void
     {
         $romanNumeral = $this->converter->convert(4);
 
         $this->assertEquals('IV', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralVForArabicNumberFive(): void
+    public function testItReturnsRomanNumeralForArabicNumberFive(): void
     {
         $romanNumeral = $this->converter->convert(5);
 
         $this->assertEquals('V', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralViForArabicNumberSix(): void
+    public function testItReturnsRomanNumeralForArabicNumberSix(): void
     {
         $romanNumeral = $this->converter->convert(6);
 
         $this->assertEquals('VI', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralViiForArabicNumberSeven(): void
+    public function testItReturnsRomanNumeralForArabicNumberSeven(): void
     {
         $romanNumeral = $this->converter->convert(7);
 
         $this->assertEquals('VII', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralViiiForArabicNumberEight(): void
+    public function testItReturnsRomanNumeralForArabicNumberEight(): void
     {
         $romanNumeral = $this->converter->convert(8);
 
         $this->assertEquals('VIII', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralIxForArabicNumberNine(): void
+    public function testItReturnsRomanNumeralForArabicNumberNine(): void
     {
         $romanNumeral = $this->converter->convert(9);
 
         $this->assertEquals('IX', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXForArabicNumberTen(): void
+    public function testItReturnsRomanNumeralForArabicNumberTen(): void
     {
         $romanNumeral = $this->converter->convert(10);
 
         $this->assertEquals('X', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXiForArabicNumberEleven(): void
+    public function testItReturnsRomanNumeralForArabicNumberEleven(): void
     {
         $romanNumeral = $this->converter->convert(11);
 
         $this->assertEquals('XI', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXiiForArabicNumberTwelve(): void
+    public function testItReturnsRomanNumeralForArabicNumberTwelve(): void
     {
         $romanNumeral = $this->converter->convert(12);
 
         $this->assertEquals('XII', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXvForArabicNumberFifteen(): void
+    public function testItReturnsRomanNumeralForArabicNumberFifteen(): void
     {
         $romanNumeral = $this->converter->convert(15);
 
         $this->assertEquals('XV', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXvForArabicNumberNineteen(): void
+    public function testItReturnsRomanNumeralForArabicNumberNineteen(): void
     {
         $romanNumeral = $this->converter->convert(19);
 
         $this->assertEquals('XIX', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXXForArabicNumberTwenty(): void
+    public function testItReturnsRomanNumeralForArabicNumberTwenty(): void
     {
         $romanNumeral = $this->converter->convert(20);
 
         $this->assertEquals('XX', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXXIIIForArabicNumberTwentyThree(): void
+    public function testItReturnsRomanNumeralForArabicNumberTwentyThree(): void
     {
         $romanNumeral = $this->converter->convert(23);
 
         $this->assertEquals('XXIII', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXlForArabicNumberForty(): void
+    public function testItReturnsRomanNumeralForArabicNumberForty(): void
     {
         $romanNumeral = $this->converter->convert(40);
 
         $this->assertEquals('XL', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXlForArabicNumberFortyThree(): void
+    public function testItReturnsRomanNumeralForArabicNumberFortyThree(): void
     {
         $romanNumeral = $this->converter->convert(43);
 
         $this->assertEquals('XLIII', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXlForArabicNumberFiftyNine(): void
+    public function testItReturnsRomanNumeralForArabicNumberFiftyNine(): void
     {
         $romanNumeral = $this->converter->convert(59);
 
         $this->assertEquals('LIX', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralXlForArabicNumberEightySeven(): void
+    public function testItReturnsRomanNumeralForArabicNumberEightySeven(): void
+    {
+        $romanNumeral = $this->converter->convert(87);
+
+        $this->assertEquals('LXXXVII', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberNinety(): void
     {
         $romanNumeral = $this->converter->convert(87);
 

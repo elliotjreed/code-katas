@@ -29,7 +29,7 @@ class Converter
             return str_repeat('X', $characterRepeater);
         }
 
-        if ($number >= 50 ) {
+        if ($number >= 50) {
             return 'L' . str_repeat('X', $characterRepeater - 5);
         }
 
