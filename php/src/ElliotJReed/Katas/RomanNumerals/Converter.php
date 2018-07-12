@@ -22,20 +22,6 @@ class Converter
         }
     }
 
-    private function processSecondToLastDigit(int $number): string
-    {
-        $characterRepeater = (int) substr((string) $number, -2, 1);
-        if ($number <= 39) {
-            return str_repeat('X', $characterRepeater);
-        }
-
-        if ($number >= 50) {
-            return 'L' . str_repeat('X', $characterRepeater - 5);
-        }
-
-        return 'XL';
-    }
-
     private function processLastDigit(int $number): string
     {
         $arabicNumber = (int) substr((string) $number, -1);
@@ -57,5 +43,23 @@ class Converter
         }
 
         return 'IV';
+    }
+
+    private function processSecondToLastDigit(int $number): string
+    {
+        $characterRepeater = (int) substr((string) $number, -2, 1);
+        if ($number <= 39) {
+            return str_repeat('X', $characterRepeater);
+        }
+
+        if ($number >= 50 && $number <= 89) {
+            return 'L' . str_repeat('X', $characterRepeater - 5);
+        }
+
+        if ($number >= 90) {
+            return 'XC';
+        }
+
+        return 'XL';
     }
 }

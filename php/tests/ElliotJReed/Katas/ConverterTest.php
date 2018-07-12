@@ -163,10 +163,10 @@ class ConverterTest extends TestCase
         $this->assertEquals('LXXXVII', $romanNumeral);
     }
 
-    public function testItReturnsRomanNumeralForArabicNumberNinety(): void
+    public function testItReturnsRomanNumeralForArabicNumberNinetyNine(): void
     {
-        $romanNumeral = $this->converter->convert(87);
+        $romanNumeral = $this->converter->convert(99);
 
-        $this->assertEquals('LXXXVII', $romanNumeral);
+        $this->assertEquals('XCIX', $romanNumeral);
     }
 }
