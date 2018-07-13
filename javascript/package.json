@@ -1,0 +1,41 @@
+{
+  "name": "code-katas",
+  "version": "1.0.0",
+  "description": "Code katas written in ECMAScript using TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha --compilers js:babel-core/register"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliotjreed/code-kata-roman-numerals.git"
+  },
+  "keywords": [
+    "kata",
+    "roman",
+    "numerals",
+    "tdd",
+    "mocha"
+  ],
+  "author": "Elliot J. Reed",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elliotjreed/code-kata-roman-numerals/issues"
+  },
+  "homepage": "https://github.com/elliotjreed/code-kata-roman-numerals#readme",
+  "devDependencies": {
+    "babel-preset-env": "^1",
+    "eslint": "^5",
+    "eslint-config-standard": "^11",
+    "eslint-plugin-import": "^2",
+    "eslint-plugin-node": "^6",
+    "eslint-plugin-promise": "^3",
+    "eslint-plugin-standard": "^3",
+    "mocha": "^5"
+  },
+  "babel": {
+    "presets": [
+      "env"
+    ]
+  }
+}
