@@ -1,0 +1,15 @@
+matrix:
+  include:
+    - language: php
+      sudo: false
+      php: 7.2
+      directories:
+        - $HOME/.composer/cache/files
+      before_script:
+        - cd php
+        - composer install
+      script:
+        - vendor/bin/phpunit -c phpunit.xml --coverage-clover clover.xml
+        - vendor/bin/phpcs -q -n --colors --standard=ruleset.xml --runtime-set ignore_warnings_on_exit true
+      after_script:
+        - php vendor/bin/coveralls --coverage_clover=clover.xml -v
