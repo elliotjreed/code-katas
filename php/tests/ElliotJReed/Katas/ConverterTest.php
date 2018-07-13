@@ -8,7 +8,6 @@ use PHPUnit\Framework\TestCase;
 
 class ConverterTest extends TestCase
 {
-    /* @var Converter */
     private $converter;
 
     public function setUp(): void
@@ -16,11 +15,9 @@ class ConverterTest extends TestCase
         $this->converter = new Converter();
     }
 
-    public function testItThrowsExceptionOnArabicNumberZero(): void
+    public function testItReturnsEmptyStringForZero(): void
     {
-        $this->expectException('ElliotJReed\Katas\RomanNumerals\NoSymbolForZeroException');
-
-        $this->converter->convert(0);
+        $this->assertEquals('', $this->converter->convert(0));
     }
 
     public function testItReturnsRomanNumeralForArabicNumberOne(): void
@@ -168,5 +165,61 @@ class ConverterTest extends TestCase
         $romanNumeral = $this->converter->convert(99);
 
         $this->assertEquals('XCIX', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberOneHundred(): void
+    {
+        $romanNumeral = $this->converter->convert(100);
+
+        $this->assertEquals('C', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberOneHundredAndTwentyOne(): void
+    {
+        $romanNumeral = $this->converter->convert(121);
+
+        $this->assertEquals('CXXI', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberTwoHundredAndTwentyOne(): void
+    {
+        $romanNumeral = $this->converter->convert(221);
+
+        $this->assertEquals('CCXXI', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberFourHundredAndTwentyOne(): void
+    {
+        $romanNumeral = $this->converter->convert(421);
+
+        $this->assertEquals('CDXXI', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberFiveHundredAndTwentyOne(): void
+    {
+        $romanNumeral = $this->converter->convert(521);
+
+        $this->assertEquals('DXXI', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberNineHundredAndTwentyOne(): void
+    {
+        $romanNumeral = $this->converter->convert(921);
+
+        $this->assertEquals('CMXXI', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberOneThousandNineHundredAndTwentyOne(): void
+    {
+        $romanNumeral = $this->converter->convert(1921);
+
+        $this->assertEquals('MCMXXI', $romanNumeral);
+    }
+
+    public function testItReturnsRomanNumeralForArabicNumberSevenThousandNineHundredAndTwentyOne(): void
+    {
+        $romanNumeral = $this->converter->convert(7921);
+
+        $this->assertEquals('MMMMMMMCMXXI', $romanNumeral);
     }
 }
