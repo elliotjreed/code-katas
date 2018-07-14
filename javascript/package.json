@@ -1,15 +1,7 @@
 {
   "name": "code-katas",
   "version": "1.0.0",
-  "description": "Code katas written in ECMAScript using TDD",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha --compilers js:babel-core/register"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/elliotjreed/code-kata-roman-numerals.git"
-  },
+  "description": "Code katas written in ECMAScript using TDD with Mocha, Chai, and Istanbul (ncy)",
   "keywords": [
     "kata",
     "roman",
@@ -19,19 +11,33 @@
   ],
   "author": "Elliot J. Reed",
   "license": "MIT",
+  "scripts": {
+    "test": "nyc --reporter=text mocha --require babel-core/register ./test/**/*.spec.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "eslint 'src/**/*.js' 'test/**/*.js'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elliotjreed/code-kata-roman-numerals.git"
+  },
   "bugs": {
     "url": "https://github.com/elliotjreed/code-kata-roman-numerals/issues"
   },
   "homepage": "https://github.com/elliotjreed/code-kata-roman-numerals#readme",
   "devDependencies": {
+    "babel": "^6",
+    "babel-cli": "^6",
     "babel-preset-env": "^1",
+    "chai": "^4",
+    "coveralls": "^3",
     "eslint": "^5",
     "eslint-config-standard": "^11",
     "eslint-plugin-import": "^2",
     "eslint-plugin-node": "^6",
     "eslint-plugin-promise": "^3",
     "eslint-plugin-standard": "^3",
-    "mocha": "^5"
+    "mocha": "^5",
+    "nyc": "^12"
   },
   "babel": {
     "presets": [

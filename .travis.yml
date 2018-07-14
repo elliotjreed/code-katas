@@ -13,3 +13,15 @@ matrix:
         - vendor/bin/phpcs -q -n --colors --standard=ruleset.xml --runtime-set ignore_warnings_on_exit true
       after_success:
         - travis_retry php vendor/bin/php-coveralls
+
+    - language: node_js
+      sudo: false
+      node_js: 10
+      install:
+        - cd javascript
+        - npm install
+      script:
+        - npm test
+        - npm run lint
+      after_success:
+        - travis_retry npm run coverage
