@@ -6,7 +6,7 @@ Coding katas are a fun way to learn a new programming language or improve your e
 
 Each 'Kata' is a puzzle of sorts to be solved using strict Test-Driven Development (TDD) techniques. That is to say, write your test first, it will fail; write the minimum amount of code required to get the test to pass; write another test, it will fail; refactor your code, writing the minimum amount of code required for the tests to pass.
 
-View the README.md in the directory of each language for example solutions, project structures, and test framework configurations.
+This repository contains example solutions, project structures, and test framework configurations for various languages
 
 Each language will have:
 
