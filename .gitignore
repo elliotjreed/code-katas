@@ -1,4 +1,4 @@
 /php/vendor
 /javascript/node_modules
-
+/php/build/logs
 /.idea
