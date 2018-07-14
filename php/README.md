@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-PHP 7.1 or above and Composer is expected to be installed on your system.
+PHP 7.1 or above and Composer are required to be installed on your system.
 
 
 ### Installing Composer

@@ -29,7 +29,8 @@ __"Write a converter to take a standard Arabic / decimal number and output the R
 
 [Encyclopedia Britannica](https://www.britannica.com/topic/Roman-numeral)
 
-Also note that the Romans did not have a symbol for zero, so the Arabic `0` should output nothing.
+
+#### Notes
 
 Here's a quick reference for Roman Numerals:
 
@@ -40,3 +41,5 @@ Here's a quick reference for Roman Numerals:
 | X | XX | XXX | XL | L | LX | LXX | LXXX | XC  |
 |**100**|**200**|**300**|**400**|**500**|**600**|**700**|**800**|**900**|
 | C | CC | CCC | CD | D | DC | DCC | DCCC | CM |
+
+Also note that the Romans did not have a symbol for zero, so the Arabic `0` should output nothing (i.e. an empty string).
