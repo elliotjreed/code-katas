@@ -3,8 +3,9 @@ matrix:
     - language: php
       sudo: false
       php: 7.2
-      directories:
-        - $HOME/.composer/cache/files
+      cache:
+        directories:
+          - $HOME/.composer/cache/files
       before_script:
         - cd php
         - composer install
@@ -13,6 +14,18 @@ matrix:
         - vendor/bin/phpcs -q -n --colors --standard=ruleset.xml --runtime-set ignore_warnings_on_exit true
       after_success:
         - travis_retry php vendor/bin/php-coveralls
+
+    - language: php
+      sudo: false
+      php: 7.1
+      cache:
+        directories:
+          - $HOME/.composer/cache/files
+      before_script:
+        - cd php
+        - composer install
+      script:
+        - vendor/bin/phpunit -c phpunit.xml --coverage-clover ./build/logs/clover.xml
 
     - language: node_js
       sudo: false
@@ -40,4 +53,3 @@ matrix:
         - npm install
       script:
         - npm test
-        - npm run lint
