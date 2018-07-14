@@ -16,17 +16,18 @@ Each language will have:
 
 ## Languages
 
-[php/README.md](PHP)
-[javascript/README.md](Javascript)
+ - PHP: [REAMDE](php/README.md)
+ - Javascript: [REAMDE](javascript/README.md)
 
 ## Katas
 
 ### Roman Numerals
 
-"Write a converter to take a standard Arabic / decimal number and output the Roman Numeral."
+__"Write a converter to take a standard Arabic / decimal number and output the Roman Numeral."__
 
 > The symbols are I, V, X, L, C, D, and M, standing respectively for 1, 5, 10, 50, 100, 500, and 1,000 in the Hindu-Arabic numeral system. A symbol placed after another of equal or greater value adds its value; e.g., II = 2 and LX = 60. A symbol placed before one of greater value subtracts its value; e.g., IV = 4, XL = 40, and CD = 400.
-From: [https://www.britannica.com/topic/Roman-numeral](Encyclopedia Britannica)
+
+[Encyclopedia Britannica](https://www.britannica.com/topic/Roman-numeral)
 
 Also note that the Romans did not have a symbol for zero, so the Arabic `0` should output nothing.
 
