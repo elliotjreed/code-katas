@@ -53,3 +53,14 @@ matrix:
         - npm install
       script:
         - npm test
+
+    - language: python
+      python: 3.7
+      install:
+        - cd python/RomanNumerals
+        - pip install -r requirements.txt
+      script:
+        - python -m unittest roman_numerals_test.py
+        - coverage run roman_numerals_test.py
+      after_success:
+        - travis_retry coveralls
