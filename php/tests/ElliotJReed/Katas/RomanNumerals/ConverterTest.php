@@ -1,7 +1,7 @@
 <?php
 declare(strict_types=1);
 
-namespace Tests\ElliotJReed\Katas;
+namespace Tests\ElliotJReed\RomanNumerals\Katas;
 
 use ElliotJReed\Katas\RomanNumerals\Converter;
 use PHPUnit\Framework\TestCase;
