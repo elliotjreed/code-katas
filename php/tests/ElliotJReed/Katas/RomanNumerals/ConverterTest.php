@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Tests\ElliotJReed\RomanNumerals\Katas;
 
-use ElliotJReed\Katas\RomanNumerals\Converter;
 use PHPUnit\Framework\TestCase;
+use ElliotJReed\Katas\RomanNumerals\Converter;
 
 class ConverterTest extends TestCase
 {
