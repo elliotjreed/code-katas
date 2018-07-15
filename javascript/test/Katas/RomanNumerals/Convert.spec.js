@@ -36,10 +36,6 @@ describe('RomanNumerals', () => {
       assert.equal(Convert(11), 'XI')
     })
 
-    it('should return Roman Numeral XI when the Arabic number is 11', () => {
-      assert.equal(Convert(11), 'XI')
-    })
-
     it('should return Roman Numeral XIV when the Arabic number is 14', () => {
       assert.equal(Convert(14), 'XIV')
     })
