@@ -18,6 +18,7 @@ Each language will have:
 
  - PHP: [REAMDE](php/README.md)
  - Javascript: [REAMDE](javascript/README.md)
+ - Python: [REAMDE](python/README.md)
 
 ## Katas
 
