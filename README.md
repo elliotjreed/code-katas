@@ -44,3 +44,9 @@ Here's a quick reference for Roman Numerals:
 | C | CC | CCC | CD | D | DC | DCC | DCCC | CM |
 
 Also note that the Romans did not have a symbol for zero, so the Arabic `0` should output nothing (i.e. an empty string).
+
+
+### Fizz Buzz
+
+__"Write a program that prints the numbers from 1 to 100. But for multiples of three print `Fizz` instead of the number and for the multiples of five print `Buzz`. For numbers which are multiples of both three and five print `FizzBuzz`."__
+
