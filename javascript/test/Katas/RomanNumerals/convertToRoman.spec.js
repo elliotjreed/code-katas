@@ -1,10 +1,14 @@
-import {describe, it} from 'mocha'
-import {assert} from 'chai'
-import convertToRoman from '../../../src/Katas/RomanNumerals/Converter'
+import { describe, it } from 'mocha'
+import { assert } from 'chai'
+import convertToRoman from '../../../src/Katas/RomanNumerals/convertToRoman'
 
 describe('RomanNumerals', () => {
-  describe('convertToRoman', () => {
+  describe('Converter', () => {
     it('should return an empty string when the Arabic number is 0', () => {
+      assert.equal(convertToRoman(0), '')
+    })
+
+    it('should return Roman Numeral I when the Arabic number is 1', () => {
       assert.equal(convertToRoman(1), 'I')
     })
 

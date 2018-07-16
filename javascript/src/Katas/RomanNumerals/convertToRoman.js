@@ -1,4 +1,4 @@
-export default function convertToRoman (arabicNumber) {
+export default function convertToRomans (arabicNumber) {
   const numberMap = {
     'M': 1000,
     'CM': 900,
