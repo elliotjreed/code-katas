@@ -1,4 +1,4 @@
-export default function convertToRoman (num) {
+export default function convertToRoman (arabicNumber) {
   const numberMap = {
     'M': 1000,
     'CM': 900,
@@ -17,8 +17,8 @@ export default function convertToRoman (num) {
   let romanNumeral = ''
 
   for (const index of Object.keys(numberMap)) {
-    const q = Math.floor(num / numberMap[index])
-    num -= q * numberMap[index]
+    const q = Math.floor(arabicNumber / numberMap[index])
+    arabicNumber -= q * numberMap[index]
     romanNumeral += index.repeat(q)
   }
 
