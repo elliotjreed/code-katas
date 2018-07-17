@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/elliotjreed/code-kata-roman-numerals.svg?branch=master)](https://travis-ci.org/elliotjreed/code-kata-roman-numerals) [![Coverage Status](https://coveralls.io/repos/github/elliotjreed/code-kata-roman-numerals/badge.svg?branch=master)](https://coveralls.io/github/elliotjreed/code-kata-roman-numerals?branch=master)
+[![Build Status](https://travis-ci.org/elliotjreed/code-kata-roman-numerals.svg?branch=master)](https://travis-ci.org/elliotjreed/code-kata-roman-numerals) [![Coverage Status](https://coveralls.io/repos/github/elliotjreed/code-kata-roman-numerals/badge.svg?branch=master)](https://coveralls.io/github/elliotjreed/code-kata-roman-numerals?branch=master) [![FOSSA Status](https://app.fossa.io/api/projects/git%2Bgithub.com%2Felliotjreed%2Fcode-kata-roman-numerals.svg?type=shield)](https://app.fossa.io/projects/git%2Bgithub.com%2Felliotjreed%2Fcode-kata-roman-numerals?ref=badge_shield)
 
 # Coding Katas
 
